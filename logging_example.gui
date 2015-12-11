@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gui>
+  <properties>
+    <project>Logging Example Project</project>
+    <designer>CommandFusion</designer>
+    <size autoposition="scale">
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <autoposition />
+    <imagefolder>
+    </imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+  </properties>
+  <systems>
+    <system name="Example System" protocol="tcp" accept="0" ip="192.168.0.58" port="10207" origin="0" alwayson="1" idleTimeout="0" dialogTimeout="0" heartbeatMode="-1" heartbeatRx="" heartbeatTx="" textEncoding="" eom="\xF5\xF5" js="" connectionStatus="0" disconnectionStatus="0" startupCmd="" startupMacro="" offlinequeue="1" ssl="0" />
+    <system name="Loopback" protocol="tcp" accept="0" ip="127.0.0.1" port="10207" origin="0" alwayson="1" idleTimeout="0" dialogTimeout="0" heartbeatMode="-1" heartbeatRx="" heartbeatTx="" textEncoding="" eom="" js="" connectionStatus="0" disconnectionStatus="0" startupCmd="" startupMacro="" offlinequeue="1" ssl="0" />
+  </systems>
+  <themes>
+    <theme type="text" name=".title"><![CDATA[ color: White; font-size: 20px; font-name: 'AvenirNext-Medium'; font-family: 'Avenir Next'; text-align: center; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="text" name=".body"><![CDATA[ color: White; font-size: 14px; font-name: 'AvenirNext-Medium'; font-family: 'Avenir Next'; text-align: center; vertical-align: middle; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+  </themes>
+  <scripts>
+    <script name="rollbar_source.js" />
+    <script name="CFRollbar.js" />
+    <script name="main.js" />
+  </scripts>
+  <page name="Startup" j="0" tags="" transition="" subtype="" time="0" ease="" start="1">
+    <portrait />
+    <landscape>
+      <txt j="0" x="142" y="30" w="741" h="100" t="title" wrap="False" l="0" tags="">Rollbar Logging Example Project</txt>
+      <txt j="0" x="142" y="110" w="741" h="182" t="body" wrap="True" l="0" tags="">If setup correctly, iViewer will have logged data to your Rollbar account!
+
+Connect the debugger to dig a little deeper:
+
+http://www.commandfusion.com/docs/scripting/debug.html</txt>
+      <txt j="1" x="142" y="300" w="741" h="433" t="body" wrap="True" l="0" tags="zmessages">Starting up...</txt>
+    </landscape>
+  </page>
+</gui>
