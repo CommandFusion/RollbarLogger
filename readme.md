@@ -9,7 +9,8 @@ Rollbar offer various pricing tiers for their service, starting with **FREE logg
 1. Create a project in your Rollbar account. You could create separate projects for each iViewer project you want to monitor, or just have them all logging to a single project.
 1. Change the token in [main.js](main.js#L10) to use the access token Rollbar assigned to your project.
 1. Open the [logging_example.gui](logging_example.gui) in guiDesigner
-1. Add your iViewer license code to the project (logging won't work without a license as it uses our CF.request JS API that is only available for licensed devices!)
+1. Add your iViewer license code to the project.  
+   Logging won't work without a license as it uses our [CF.request JS API](http://www.commandfusion.com/docs/scripting/net.html#cF.request) that is only available for licensed devices!
 1. Load the guiDesigner project into iViewer on your device and watch logs appear in your Rollbar account.
 
 ## Init Options
